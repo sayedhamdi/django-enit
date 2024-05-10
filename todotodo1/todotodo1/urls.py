@@ -18,8 +18,10 @@ from django.urls import path
 from hello import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello',views.index),
-    path("isItAid",views.isItAid),
+    #path('hello',views.index),
+    #path("isItAid",views.isItAid),
     path("todos",views.getAllTodos),
-    path('sayHello/<str:name>',views.say_hello)
+    path("todos/<str:todo_id>",views.getTodo),
+    path("hello/login",views.login)
+    #path('sayHello/<str:name>',views.say_hello)
 ]
