@@ -21,7 +21,8 @@ urlpatterns = [
     #path('hello',views.index),
     #path("isItAid",views.isItAid),
     path("todos",views.getAllTodos),
-    path("todos/<str:todo_id>",views.getTodo),
-    path("hello/login",views.login)
+    path("todos/create",views.createTodo),
+    path("hello/login",views.login),
+    path("todos/<str:todo_id>",views.getTodoAndDelete)
     #path('sayHello/<str:name>',views.say_hello)
 ]
